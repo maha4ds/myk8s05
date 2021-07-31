@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mynginx-svc
   labels:
-    app: mynginx
+    app: myjavaapp
 spec:
   type: NodePort
   ports:
@@ -11,7 +11,7 @@ spec:
     nodePort: 30001
     protocol: TCP
   selector:
-    app: mynginx
+    app: myjavaapp
   
 
   # -p 30001:80
